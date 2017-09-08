@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
+  margin: 20px auto;
+  background-color: maroon;
+  color: #f7f7f7;
+  font-size: 1.3em;
+  font-family: 'Lato';
+  padding: 0 10px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+/*
+* Any styling that should be applied to screen widths larger
+* than a mobile device: tablet, laptop, desktop, etc.
+*/
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+/* Styling */
+
+.column {
+  border: 1px solid #666;
+  background: #343436;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-size: .8em;
+}
+
+.surname {
+  background-color: white;
+  color: maroon;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  border: .5em solid black;
+  border-radius: 1em;
+}
+
+.surname_coat {
+  width: 309px;
+  height: 261px;
+}
+
+.surname_origin {
+  font-size: .75em;
+  padding: 0 1em;
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta http-equiv='Content-Type' content='text/html; charset=utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1'
+    meta name='lang' content='en'
+    meta name='robots' content='noindex, nofollow'
+    link rel='shortcut icon' href='/favicon.ico'
+    link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'
+    link rel='stylesheet' href='/css/zarate.css' media='screen'  type='text/css'
+    title Zarate
+  body
+    .container
+      == slim :header
+      == yield
