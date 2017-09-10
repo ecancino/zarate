@@ -1,9 +1,12 @@
-h1 Zarate
-.surname
-  img class='surname_coat' src='img/zarate.jpg'
-  p class='surname_origin' The surname Zarate was first found in the northern Basque region of Spain, near the city of Zárate. They began to branch out into other regions of the Iberian peninsula with the Christian Reconquest of Spain from the Muslims. The family established themselves in Vizcaya, Andalusia and Madrid. An early record of the surname is of Juan Ortiz de Zárate, who died in a bloody battle at the river Zadorra in the 14th century. The family was ennobled in the early 17th century when they were made members of the Orders of Santiago, Calatrava and Alcantara
-
-h1 Cancino
-.surname
-  img class='surname_coat' src='img/cancino.jpg'
-  p class='surname_origin' The surname Cancino was first found in Tuscany (Italian: Toscana), a region in central Italy, where Pietro del Porcone Cancellieri held the position of Chancellor of the Frankish Kingdom in 1171. Cialdo Cancellieri, was the mayor of Pistoia in 1256. Diego Cancellieri was a brave knight in Pisa in the 13th century; Vanni Cancellieri, also known as 'Foccaccia,' was active in politics in Pistoia at this time; Ricciardo di Lazzaro Cancellieri was mayor of Perugia in 1333, and in 1378 became General Captain for the armies of the powerful Estensi ruling family. Bartolomeo Cancellieri was a knight in Pistoia during the next century; Bartolomeo Cancellieri became mayor of Bologna and, later, was a judge in Abruzzo.
+h1 Movies
+- @movies.each do | movie |
+  .row
+    h1 #{movie.title}
+    p #{movie.director}
+    p #{movie.duration}
+    p #{movie.language}
+    p #{movie.country}
+    p #{movie.year}
+    p #{movie.gross}
+    p #{movie.budget}
+    a href="#{movie.imdb_link}" target="_blank" IMDB (#{movie.imdb_score})
